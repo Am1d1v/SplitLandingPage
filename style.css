@@ -3,6 +3,9 @@
   --right-bg-color: rgba(93, 182, 90, 0.3);
   --left-btn-color: rgb(40, 43, 196);
   --right-btn-color: rgb(93, 182, 90);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 600ms;
 }
 
 * {
@@ -49,7 +52,7 @@ h1 {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #555;
+  background-color: rgb(49, 75, 49);
 }
 
 .split {
@@ -95,4 +98,24 @@ h1 {
   background-color: var(--right-btn-color);
   border-color: var(--right-btn-color);
   border-radius: 5px;
+}
+
+.split.right, .split.left, .split.right::before, .split.left::before {
+  transition: all var(--speed) ease-in-out;
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
 }/*# sourceMappingURL=style.css.map */
