@@ -118,4 +118,16 @@ h1 {
 
 .hover-right .left {
   width: var(--other-width);
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+  .btn {
+    padding: 0.2rem;
+    font-size: 20px;
+    width: 9rem;
+  }
 }/*# sourceMappingURL=style.css.map */
